@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/cv_variant_selector"
+
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:background="@drawable/item_dashboard_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+<RelativeLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/fl_variant_selector"
+    android:layout_gravity="center"
+    android:padding="5dp">
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/iv_selector_background"
+        android:layout_alignParentTop="false"
+        android:layout_centerInParent="true"
+        android:background="@color/pallete_one"/>
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/iv_selector_color"
+        android:layout_centerInParent="true"
+        tools:background="@color/pallete_Two"/>
+
+</RelativeLayout>
+        <com.clothingempire.clothingempire.customwidgets.CETextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvSize"
+            tools:text="size"
+            android:padding="10sp"
+            android:textColor="@color/pallete_one"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

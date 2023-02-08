@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "936979400827",
+    "project_id": "clothingempire-a0ce9",
+    "storage_bucket": "clothingempire-a0ce9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:936979400827:android:26a5e976a9e0413b217ade",
+        "android_client_info": {
+          "package_name": "com.clothingempire.clothingempire"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "936979400827-sqbsk8orn7jbfjqji271lq6c4lqpjbs0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.clothingempire.clothingempire",
+            "certificate_hash": "942442f66672a5ef48eb37184559aa9013a72fc9"
+          }
+        },
+        {
+          "client_id": "936979400827-appi734bell2ksv7minfaafk8acjq3l6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCs6OG9qY-RdsxIYJYpkzDhVMNL_fbsM88"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "936979400827-appi734bell2ksv7minfaafk8acjq3l6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

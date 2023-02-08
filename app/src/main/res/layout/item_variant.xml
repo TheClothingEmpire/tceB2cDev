@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+    <com.clothingempire.clothingempire.customwidgets.CETextView
+        android:id="@+id/tv_name"
+        style="@style/outlineBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="#000000"
+        tools:text="name"
+        />
+    <ImageView
+        android:layout_width="30sp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:background="@color/pallete_one"
+        android:textColor="#000000"
+        android:id="@+id/iv_color"/>
+    <com.clothingempire.clothingempire.customwidgets.CETextView
+        android:id="@+id/tv_size"
+        style="@style/outlineBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="#000000"
+        android:layout_weight="3"
+
+        tools:text="xl"
+        />
+    <com.clothingempire.clothingempire.customwidgets.CETextView
+        android:id="@+id/tv_quantity"
+        style="@style/outlineBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textColor="#000000"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="3"
+        tools:text="0"
+        />
+    <ImageView
+        android:layout_width="30sp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_weight="1"
+        android:src="@drawable/ic_baseline_delete_outline_24"
+        android:layout_gravity="center"
+        android:id ="@+id/iv_delete_variant"/>
+
+
+
+</LinearLayout>

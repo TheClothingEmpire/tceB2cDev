@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@id/tv_shop_details">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.activities.ShopSignIn"
+    android:background="@color/colorOffWhite"
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_shop_sign_in_activity"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/shape_button_rounded"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/tv_shop_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        android:text="Shop Details"
+        android:textSize="20sp"
+        android:textColor="@color/pallete_Two"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_shop_sign_in_activity"/>
+
+    <RadioGroup
+        android:id="@+id/rg_shop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_shop_details"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/drawable_radio_tab_background"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_new_Shop"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:background="@drawable/drawable_unit_selector"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="Register New shop"
+            android:textColor="@drawable/drawable_unit_tab_color_selector"
+            android:textSize="16dp"
+            android:layout_weight="1"
+            android:textStyle="bold"/>
+        <RadioButton
+            android:id="@+id/rb_existing_Shop"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:background="@drawable/drawable_unit_selector"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:text="Existing Shops"
+            android:layout_weight="1"
+            android:textColor="@drawable/drawable_unit_tab_color_selector"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+    </RadioGroup>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_shop"
+        app:layout_constraintTop_toBottomOf="@id/rg_shop"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_shop_name"
+            style="@style/outlineBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="16dp"
+            android:hint="Enter Shop Name"
+            android:textColorHint="@color/pallete_Two"
+            >
+
+
+            <com.clothingempire.clothingempire.customwidgets.CEEditText
+                android:id="@+id/et_shop_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:padding="@dimen/et_padding"
+                android:textColor="@color/pallete_one"
+                android:textSize="@dimen/et_textSize" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_shop_gst"
+            style="@style/outlineBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="16dp"
+            android:hint="Enter GST number"
+            android:textColorHint="@color/pallete_Two"
+            >
+
+
+            <com.clothingempire.clothingempire.customwidgets.CEEditText
+                android:id="@+id/et_shop_gst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:padding="@dimen/et_padding"
+                android:textColor="@color/pallete_one"
+                android:textSize="@dimen/et_textSize" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_shop_contact"
+            style="@style/outlineBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="16dp"
+            android:hint="Enter contact number"
+            android:textColorHint="@color/pallete_Two"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rg_shop">
+
+
+            <com.clothingempire.clothingempire.customwidgets.CEEditText
+                android:id="@+id/et_shop_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:padding="@dimen/et_padding"
+                android:textColor="@color/pallete_one"
+                android:textSize="@dimen/et_textSize" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_shop_location"
+            style="@style/outlineBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="16dp"
+            android:hint="Location"
+            android:textColorHint="@color/pallete_Two"
+            >
+
+
+            <com.clothingempire.clothingempire.customwidgets.CEEditText
+                android:id="@+id/et_shop_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:padding="@dimen/et_padding"
+                android:textColor="@color/pallete_one"
+                android:textSize="@dimen/et_textSize" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_shop_password"
+            style="@style/outlineBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="16dp"
+            android:hint="Enter Shop password"
+            android:textColorHint="@color/pallete_Two"
+            >
+
+
+            <com.clothingempire.clothingempire.customwidgets.CEEditText
+                android:id="@+id/et_shop_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:padding="@dimen/et_padding"
+                android:textColor="@color/pallete_one"
+                android:textSize="@dimen/et_textSize" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_shop_confirm_password"
+            style="@style/outlineBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="16dp"
+            android:hint="Confirm Shop Password "
+            android:textColorHint="@color/pallete_Two"
+            >
+
+
+            <com.clothingempire.clothingempire.customwidgets.CEEditText
+                android:id="@+id/et_shop_confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:padding="@dimen/et_padding"
+                android:textColor="@color/pallete_one"
+                android:textSize="@dimen/et_textSize" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.clothingempire.clothingempire.customwidgets.CEButton
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="30dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:paddingTop="@dimen/btn_padding"
+            android:paddingBottom="@dimen/btn_padding"
+            android:text="@string/btn_lbl_register"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/btn_textSize"
+
+            />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/item_dashboard_background">
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_margin="10sp"
+            android:id="@+id/iv_selector_color"
+            android:layout_centerInParent="true"
+            tools:background="@color/pallete_Two"/>
+        <LinearLayout
+            android:id="@+id/ll_update_cart_quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rv_item_image_background"
+            android:layout_margin="@dimen/button_padding"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <ImageButton
+                android:id="@+id/ib_remove_cart_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ib_remove_cart_item_marginStartEnd"
+                android:layout_marginEnd="@dimen/ib_remove_cart_item_marginStartEnd"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/content_description"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:padding="@dimen/ib_cart_item_padding"
+                android:src="@drawable/ic_vector_remove" />
+
+            <com.clothingempire.clothingempire.customwidgets.CETextView
+                android:id="@+id/tv_cart_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_grey_border_background"
+                android:paddingStart="@dimen/cart_quantity_paddingStartEnd"
+                android:paddingTop="@dimen/cart_quantity_paddingTopBottom"
+                android:paddingEnd="@dimen/cart_quantity_paddingStartEnd"
+                android:paddingBottom="@dimen/cart_quantity_paddingTopBottom"
+                android:textColor="@color/pallete_Two"
+                android:textSize="@dimen/cart_quantity_textSize"
+                android:textStyle="bold"
+                tools:text="1" />
+
+            <ImageButton
+                android:id="@+id/ib_add_cart_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ib_add_cart_item_marginStart"
+                android:layout_marginEnd="@dimen/ib_add_cart_item_marginEnd"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/content_description"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:padding="@dimen/ib_cart_item_padding"
+                android:src="@drawable/ic_vector_add" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.clothingempire.clothingempire.customwidgets.BoldTextView
+            android:layout_height="wrap_content"
+            android:layout_width="0sp"
+            android:layout_weight="1"
+            android:id="@+id/tv_save"
+            android:textSize="@dimen/add_address_textSize"
+            android:gravity="center"
+            android:padding="10sp"
+            android:background="@drawable/drawable_gender_tab_selector"
+            android:text="Save"
+            android:layout_margin="@dimen/button_padding"
+            android:textColor="@color/pallete_Two"/>
+        <com.clothingempire.clothingempire.customwidgets.BoldTextView
+            android:padding="10sp"
+            android:layout_height="wrap_content"
+            android:layout_width="0sp"
+            android:layout_weight="1"
+            android:textSize="@dimen/add_address_textSize"
+            android:id="@+id/tv_cancel"
+            android:gravity="center"
+            android:text="Cancel"
+            android:layout_margin="@dimen/button_padding"
+            android:background="@drawable/drawable_gender_tab_selector"
+            android:textColor="@color/pallete_Two"/>
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

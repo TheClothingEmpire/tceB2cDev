@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.SubscriptionsFragment"
+    android:layout_marginBottom="?attr/actionBarSize"
+    android:background="@color/colorOffWhite"
+    android:layout_marginTop="?attr/actionBarSize">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.fragments.SubscriptionsFragment"
+        android:background="@color/colorOffWhite"
+        >
+
+        <com.clothingempire.clothingempire.customwidgets.CETextView
+            android:id="@+id/tv_about_us_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="About Us"
+            android:padding="10sp"
+            android:textAllCaps="true"
+            android:textColor="@color/pallete_one"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.clothingempire.clothingempire.customwidgets.CETextView
+            android:padding="10dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_about_us_heading"
+            android:id="@+id/tv_about_us"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/about_us_body"
+            android:gravity="center"
+            android:textAllCaps="true"
+
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+
+            />
+        <com.clothingempire.clothingempire.customwidgets.CETextView
+            android:layout_marginTop="50sp"
+            android:layout_marginHorizontal="10sp"
+            android:padding="10dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_about_us"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="For any questions or comments, please reach out using the following contacts."
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/tv_contact_header"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_contact_header"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/tv_phone_number"
+            android:text="@string/phone_number"
+            android:textColor="@color/pallete_one"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:padding="10sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_phone_number"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/tv_email_id"
+            android:text="@string/email_id_Clothing_empire"
+            android:textColor="@color/pallete_one"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:padding="10sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_email_id"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/tv_blog"
+            android:text="@string/clothing_empire_blog"
+            android:textColor="@color/pallete_one"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:padding="10sp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_select_item"
+        >
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/cb_item_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.clothingempire.clothingempire.customwidgets.CETextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/product_details_stock_quantity_textSize"
+            tools:text="selector"
+            android:id="@+id/tv_popup_item"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_add_item"
+        >
+        <ImageView
+            android:layout_height="@dimen/product_details_stock_quantity_textSize"
+            android:layout_width="@dimen/product_details_stock_quantity_textSize"
+            android:src="@drawable/ic_add_black_24"/>
+        <com.clothingempire.clothingempire.customwidgets.CETextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/product_details_stock_quantity_textSize"
+            android:text="Add"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
